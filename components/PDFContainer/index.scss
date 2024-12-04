@@ -1,0 +1,47 @@
+.translation-container {
+    margin-top: 10px;
+    height: calc(100vh - 175px);
+    overflow: auto;
+    .translation-html-container {
+        div {
+            cursor: pointer;
+            color: #666;
+            border-bottom: 1px solid #eee;
+            padding: 10px 5px;
+            &:hover {
+                background: #efefef;
+                color: #000;
+            }
+        }
+    }
+}
+
+.react-pdf__Page {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+    &:nth-child(1) {
+        border-top: 0;
+    }
+    .react-pdf__Page__canvas,
+    .react-pdf__Page__textContent {
+        margin: 0 auto;
+    }
+}
+
+.nofile-tip {
+    margin: 10% 0 0 0;
+    color: #787878;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+.react-pdf__message--loading{
+    text-align: center;
+    margin-top: 10%;
+    color: #787878;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+}

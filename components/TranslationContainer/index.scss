@@ -1,0 +1,23 @@
+.translate-container {
+    .translate-button{
+        margin-top: 10px;
+    }
+    h2 {
+        .icon-with-text {
+            margin-left: 10px;
+            display: inline-block;
+            i {
+                font-size: 18px;
+                font-weight: 100;
+            }
+            b {
+                font-weight: normal;
+                line-height: 28px;
+                display: inline-block;
+                font-size: 14px;
+                vertical-align: top;
+                margin-left: 2px;
+            }
+        }
+    }
+}

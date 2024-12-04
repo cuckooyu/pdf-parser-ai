@@ -1,0 +1,45 @@
+.summarize-container {
+    padding: 20px 30px;
+    .tips {
+        color: #6e6d7a;
+        font-size: 14px;
+        margin-top: 10px;
+        line-height: 30px;
+    }
+    .ant-form-item {
+        margin-bottom: 10px;
+    }
+    h5 {
+        background: #fff;
+        position: relative;
+        top: 10px;
+        display: inline-block;
+        left: 0px;
+        padding: 0 10px 0 0;
+        color: #a5a5a5;
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .configuration-container {
+        font-size: 16px;
+        line-height: 26px;
+        padding: 25px 20px 20px;
+        border-radius: 8px;
+        color: #444;
+        height: 150px;
+        border-top: 1px solid #e8e8e8;
+    }
+    .summarize-content {
+        font-size: 16px;
+        border-top: 1px solid #e8e8e8;
+        line-height: 26px;
+        padding: 25px 20px 20px;
+        border-radius: 8px;
+        color: #444;
+        height: calc(100vh - 450px);
+        overflow: auto;
+        pre {
+            text-wrap: auto;
+        }
+    }
+}

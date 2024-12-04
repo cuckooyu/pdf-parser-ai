@@ -1,0 +1,8 @@
+.ant-tree .ant-tree-treenode:not(.ant-tree-treenode-disabled) .ant-tree-node-content-wrapper:hover {
+    &.ant-tree-node-selected{
+        color:#fff;
+    }
+}
+.tree-container{
+    padding: 20px 10px;
+}
