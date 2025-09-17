@@ -1,0 +1,197 @@
+.tag-manager {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.tag-manager h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.tag-manager h2 {
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+}
+
+.tag-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.tag-input:focus {
+  border-color: #4CAF50;
+}
+
+.add-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+.add-button:active {
+  background-color: #3e8e41;
+}
+
+/* Tags sections */
+.active-tags-section,
+.deleted-tags-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.active-tags-section {
+  border-left: 4px solid #4CAF50;
+}
+
+.deleted-tags-section {
+  border-left: 4px solid #ff9800;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-height: 50px;
+}
+
+.empty-message {
+  color: #999;
+  font-style: italic;
+  margin: 0;
+  padding: 15px 0;
+}
+
+/* Tag styles */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.active-tag {
+  background-color: #e8f5e8;
+  color: #2e7d2e;
+  border: 2px solid #4CAF50;
+}
+
+.active-tag:hover {
+  background-color: #d4edda;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(76, 175, 80, 0.2);
+}
+
+.deleted-tag {
+  background-color: #fff3e0;
+  color: #e65100;
+  border: 2px solid #ff9800;
+  cursor: pointer;
+}
+
+.deleted-tag:hover {
+  background-color: #ffe0b2;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(255, 152, 0, 0.2);
+}
+
+.tag-content {
+  flex: 1;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.delete-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #d32f2f;
+  transform: scale(1.1);
+}
+
+.delete-button:active {
+  transform: scale(0.95);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .tag-manager {
+    padding: 15px;
+  }
+  
+  .input-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .tag-input,
+  .add-button {
+    width: 100%;
+  }
+  
+  .tags-container {
+    gap: 8px;
+  }
+  
+  .tag {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}
